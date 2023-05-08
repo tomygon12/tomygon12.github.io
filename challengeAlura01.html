@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="challengeAlura01.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+        <title>Cifrador De Frases</title>
+        
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="logoAlura.png">
+        </header>
+        <main>
+            <section id="entrada">
+                <textarea id="texto-ingresado" placeholder="Ingrese texto a cifrar aquí..."  autofocus=""></textarea>
+                <p class="texto-informativo"> &#128712; Sólo letras minúsculas y sin acentos.</p>
+                <div class="frame">
+                    <button id="btn-encriptar" class="boton" type="button">Encriptar</button>
+                    <button id="btn-desencriptar" class="boton" type="button">Desencriptar</button>
+                </div>
+            </section>
+            <section id="resultado">
+               <div id="texto-resultado">
+                <p class="texto-creado" id="texto-modificado"></p>
+                <p class="texto-creado" id="mensaje">No se encontró texto.</p>
+               </div>
+               <button id="btn-copiar" class="boton" type="button">Copiar</button>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+    <script src="codificadorDeFrases.js"></script>
+</html>
